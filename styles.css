@@ -14,10 +14,11 @@ nav ul li a {
     background-color: #D9D5D5;
     color: black;
     margin: 2rem;
-    height: 50px;
+    height: 30px;
     width: 100px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
+    border-radius: 25px;
 }
 
 nav a {
@@ -31,4 +32,14 @@ nav a {
 nav a:hover {
     background-color: #5E503F;
     color: white;
+}
+
+#searchbutton {
+    background-color: #F8F5F5;
+    color: #A39797;
+    width: 400px;
+    height: 30px;
+    border-radius: 25px;
+    padding: 0;
+    border: none;
 }

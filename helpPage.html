@@ -17,74 +17,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Texts</title>
     <link rel="icon" type="image/png" href="images\TextsLogo.JPG">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <div>
-        <div>
-            <h1>Texts</h1>
+    <header class="header">
+        <div class="left-section">
+          <h1>Texts</h1>
+          <button class="search-box">Placeholder for Search Button</button>
         </div>
-        <div>
-            <button>Placeholder for Search Button</button>
+        <div class="dropdown">
+          <button class="dropdown-btn">Menu</button>
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="textPage.html">Textbook</a>
+            <a href="helpPage.html">Help</a>
+          </div>
         </div>
+    </header> 
+    <div class="havingtrouble">
+        <p class="httext">Having Trouble? Leave your information below and we will get back with you as soon as possible.</p>
     </div>
-    <button>Place Holder for Button Navigation</button>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="textPage.html">Textbook</a></li>
-            <li><a href="helpPage.html">Help</a></li>
-        </ul>
-    </nav>
-</header>
     <form action="submit.php" method="POST">
 
-        <p>
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
-        </p>
+        <div class="spacing">
+        <label for="firstName"></label>
+        <input type="text" id="firstName" name="firstName" placeholder="Type your first name..." required>
+        </div>
 
-        <p>
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
-        </p>
+        <div class="spacing">
+        <label for="lastName"></label>
+        <input type="text" id="lastName" name="lastName" placeholder="Type your last name..." required>
+        </div>
 
-        <p>
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" required>
-        </p>
+        <div class="spacing">
+            <label for="lastName"></label>
+            <input type="text" id="lastName" name="lastName" placeholder="Type your email..." required>
+        </div>
 
-        <p>
-            <label for="phone">Phone:</label>
-            <input type="number" id="phone" name="email" required>
-        </p>
 
-        <p>
-            <label for="Email">Email:</label>
-            <input type="text" id="Email" name="Email" required>
-        </p>
+        <div class="spacing">
+            <label for="lastName"></label>
+            <input type="text" id="lastName" name="lastName" placeholder="Type your phone number..." required>
+        </div>
 
-        <p>
-            <label for="problem">Problem/Request:</label>
-            <textarea id="problem" name="problem" rows="5" cols="50" placeholder="Tell us your thoughts..."></textarea>
-        </p>
+        <div class="spacing">
+            <label for="lastName"></label>
+            <input type="text" id="lastName" name="lastName" placeholder="What is the problem..." required>
+            </div>
 
-        <p>
-            Preferred Form of Contact?
-        </p>
+        <div class="spacing">
+            <label for="lastName"></label>
+            <input type="text" id="lastName" name="lastName" placeholder="Prefered Communication..." required>
+            </div>
 
-        <p>
-            <label for="emailp">Email</label>
-            <input type="checkbox" name="emailp" id="emailp">
-        </p>
+        <!-- <div class="spacing">
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="your@example.com" required>
+        </div>
 
-        <p>
-            <label for="phonep">Phone</label>
-            <input type="checkbox" name="phonep" id="phonep">
-        </p>
+        <div class="spacing">
+        <label for="phone"></label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+        </div>
 
+        <div class="spacing">
+        <label for="problem"></label>
+        <textarea id="problem" name="problem" rows="5" cols="50" placeholder="Tell us your thoughts..."></textarea>
+        </div>
+        <p>Preferred Form of Contact?</p>
+
+
+        <div class="spacing">
+        <label for="emailp"></label>
+        <input type="checkbox" name="emailp" id="emailp"> Email
+        </div>
+
+        <div>
+        <label for="phonep"></label>
+        <input type="checkbox" name="phonep" id="phonep"> Phone
+        </div>
+
+        <div class="spacing">
         <input type="submit" value="Submit">
+        </div> -->
+
     </form>
-    <footer>Copyright © Solomon Jacobs 2025</footer>
+    <div class="footer">
+        <footer>Copyright © Solomon Jacobs 2025</footer>
+    </div>
+
+    <div class="bigbox">
+        <div class="helpbox">
+            <div>
+                <h1 class="tophelpbox">
+                    FAQ
+                </h1>
+                <div>
+                    <div class="generalhelp">
+                        <p class="generalhelptext">
+                            General
+                        </p>
+                    </div>
+                    <div class="textbookhelp">
+                        <p class="textbookhelptext">
+                            Textbook
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="helpbox2">
+            <div>
+                <h1 class="tophelpbox2">
+                    General
+                </h1>
+                <div>
+                    <div class="generalhelp2">
+                        <p class="generalhelptext2">
+                            How to Complete Multiple Choice Assessments
+                        </p>
+                    </div>
+                    <div class="textbookhelp2">
+                        <p class="textbookhelptext2">
+                            How to Login with Google
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 </html>

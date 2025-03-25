@@ -1,45 +1,281 @@
-header {
-    background-color: white;
-    display: flex;
+.header {
+  display: flex; /* creates a flex container */
+  justify-content: space-between; /* spaces items to ends of the container */
+  align-items: center; /* vertically centers items */
+  padding: 15px 30px; /* adds space inside the header */
+  background-color: white; /* sets background to white */
 }
 
-nav ul {
-    display: flex;
-    padding: 2rem;
-    list-style-type: none;
+.left-section {
+  display: flex; /* flex container for left section */
+  align-items: center; /* vertically center contents */
+  gap: 15px; /* spacing between child elements */
 }
 
-nav ul li a {
-    display: inline-block;
-    background-color: #D9D5D5;
-    color: black;
-    margin: 2rem;
-    height: 30px;
-    width: 100px;
-    text-align: center;
-    padding-top: 10px;
-    border-radius: 25px;
+.search-box {
+  background-color: #F8F5F5; /* light background */
+  color: #A39797; /* text color */
+  width: 400px; /* sets width */
+  height: 30px; /* sets height */
+  border-radius: 25px; /* rounded corners */
+  padding: 0; /* removes internal spacing */
+  border: none; /* removes default border */
 }
 
-nav a {
-    display: inline-block;
-    /* padding: 1rem; */
-    /* color: white; */
-    text-decoration: none;
-    font-weight: bold;
+.search-box:hover {
+  background-color: #5E503F; /* darker background on hover */
+  color: white; /* changes text color */
+  transition: 0.5s ease; /* smooth transition */
 }
 
-nav a:hover {
-    background-color: #5E503F;
-    color: white;
+.dropdown {
+  position: relative; /* positions dropdown content relative to this */
 }
 
-#searchbutton {
-    background-color: #F8F5F5;
-    color: #A39797;
-    width: 400px;
-    height: 30px;
-    border-radius: 25px;
-    padding: 0;
-    border: none;
+.dropdown-btn {
+  padding: 10px 40px; /* space inside button */
+  background-color: #F8F5F5; /* light background */
+  color: #A39797; /* text color */
+  border: none; /* removes border */
+  cursor: pointer; /* pointer cursor on hover */
+  border-radius: 25px; /* rounded corners */
+}
+
+.dropdown-btn:hover {
+  background-color: #5E503F; /* darker background */
+  color: white; /* changes text color */
+  transition: 0.5s ease; /* smooth transition */
+}
+
+.dropdown-content {
+  display: none; /* hidden by default */
+  position: absolute; /* positioned absolutely inside dropdown */
+  right: 0; /* aligns to the right edge */
+  background-color: white; /* white background */
+  min-width: 160px; /* minimum width */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* shadow effect */
+  z-index: 1; /* brings above other elements */
+}
+
+.dropdown-content a {
+  padding: 12px 16px; /* internal spacing */
+  display: block; /* takes full line */
+  text-decoration: none; /* removes underline */
+  color: black; /* text color */
+}
+
+.dropdown-content a:hover {
+  background-color: #5E503F; /* background on hover */
+  color: white; /* text color on hover */
+  transition: 0.5s ease; /* smooth transition */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* show dropdown on hover */
+}
+
+/* Actual Text */
+
+.pageWrapper {
+  width: 90%; /* takes 90% of screen */
+  margin: 0 auto; /* centers horizontally */
+}
+
+.topic {
+  margin: 0px 0px 0px 5px; /* slight left margin */
+}
+
+.content-wrapper {
+  background-color: #D9D5D5; /* light grey background */
+  border-radius: 25px; /* rounded corners */
+}
+
+.text {
+  padding-left: 15px; /* space on the left */
+  margin-right: 10px; /* space on the right */
+  padding-top: 20px; /* space on the top */
+}
+
+.text2 {
+  padding-left: 15px; /* space on the left */
+  margin-right: 10px; /* space on the right */
+  padding-top: 5px; /* space on the top */
+}
+
+.image2 {
+  position: relative; /* for internal positioning */
+  float: right; /* floats image to right */
+  border-radius: 25px; /* rounded corners */
+  height: auto; /* keeps proportions */
+  display: block; /* block-level display */
+}
+
+/* Footer */
+
+.footer {
+  position: fixed; /* sticks to bottom */
+  bottom: 0; /* bottom of screen */
+  left: 0; /* from left edge */
+  width: 100%; /* full width */
+  height: 20px; /* height of footer */
+  text-align: center; /* center text */
+  padding: 5px 0; /* vertical padding */
+  background-color: #D9D5D5; /* background color */
+}
+
+/* Textbook Page */
+
+.imgback {
+background-image: url('images/photo-1603969409447-ba86143a03f6.jpg'); /* background image */
+background-size: cover; /* fills the div */
+background-position: left; /* aligns image left */
+background-repeat: no-repeat; /* no tiling */
+height: 70px; /* height of div */
+width: 95%; /* almost full width */
+border-radius: 25px; /* rounded corners */
+}
+
+.wordback {
+  background-color: #D9D5D5; /* background color */
+  border-radius: 25px; /* rounded corners */
+  padding-left: 20px; /* left spacing */
+  width: 90%; /* relative width */
+}
+
+.havingtrouble {
+  display: flex; /* flex layout */
+  justify-content: space-between; /* items on both ends */
+  background-color: #F8F5F5; /* background */
+  color: #A39797; /* text color */
+  width: 500px; /* fixed width */
+  height: 30px; /* fixed height */
+  margin: 0 auto; /* centered */
+  border-radius: 25px; /* rounded */
+  padding-left: 50px; /* padding on the left */
+  border: none; /* no border */
+  font-size: 12px; /* small text */
+  align-items: center; /* vertically center */
+}
+
+.httext {
+  padding-left: 10px; /* left padding */
+}
+
+input[type="text"] {
+  width: 300px; /* fixed width */
+  height: 20px; /* fixed height */
+  padding: 12px 16px; /* inside spacing */
+  font-size: 12px; /* text size */
+  border: none; /* no border */
+  border-radius: 25px; /* rounded */
+  background-color: #F8F5F5; /* background */
+  color: black; /* text color */
+  outline: none; /* no focus outline */
+  margin: 0 auto; /* centered horizontally */
+  justify-content: center /* INVALID unless parent is flex */
+}
+
+input[type="text"]:focus {
+  box-shadow: none; /* no shadow */
+}
+
+input::placeholder {
+  color: #aaa; /* placeholder color */
+}
+
+.spacing {
+  padding-bottom: 10px; /* space below */
+  margin: auto; /* center horizontally */
+}
+
+.bigbox {
+  display: flex; /* layout children in a row */
+  justify-content: space-between; /* spread out children */
+}
+
+.helpbox {
+  background-color: #D9D5D5; /* background color */
+  border-radius: 25px; /* rounded corners */
+  width: 40%; /* partial width */
+  height: 200px; /* fixed height */
+}
+
+.tophelpbox {
+  padding-left: 10px; /* indent */
+  text-decoration: underline; /* underline text */
+  text-decoration-color: #5E503F; /* custom underline color */
+}
+
+.generalhelp {
+  background-color: #5E503F; /* dark background */
+  color: white; /* white text */
+  width: 400px; /* fixed width */
+  height: 30px; /* fixed height */
+  border-radius: 25px; /* rounded */
+  padding: 0; /* no inner space */
+  border: none; /* no border */
+}
+
+.generalhelptext {
+  padding-left: 180px; /* indent text */
+  padding-top: 5px; /* top space */
+}
+
+.textbookhelp {
+  background-color: #F8F5F5; /* light background */
+  color: #aaa; /* grey text */
+  width: 400px; /* width */
+  height: 30px; /* height */
+  border-radius: 25px; /* rounded */
+  padding-left: 0; /* no left space */
+  border: none; /* no border */
+}
+
+.textbookhelptext {
+  padding-left: 180px; /* indent */
+  padding-top: 5px; /* top padding */
+}
+
+.helpbox2 {
+  position: relative; /* for positioning */
+  background-color: #D9D5D5; /* background */
+  border-radius: 25px; /* rounded */
+  width: 55%; /* width */
+  height: 200px; /* height */
+}
+
+.tophelpbox2 {
+  padding-left: 10px; /* indent */
+  text-decoration: underline; /* underline */
+  text-decoration-color: #5E503F; /* underline color */
+}
+
+.generalhelp2 {
+  background-color: #F8F5F5; /* background */
+  color: #aaa; /* text color */
+  width: 400px; /* width */
+  height: 30px; /* height */
+  border-radius: 25px; /* rounded */
+  padding-left: 0; /* no indent */
+  border: none; /* no border */
+}
+
+.generalhelptext2 {
+  padding-left: 180px; /* indent */
+  padding-top: 5px; /* top space */
+}
+
+.textbookhelp2 {
+  background-color: #F8F5F5; /* background */
+  color: #aaa; /* text color */
+  width: 400px; /* width */
+  height: 30px; /* height */
+  border-radius: 25px; /* rounded */
+  padding-left: 0; /* no padding */
+  border: none; /* no border */
+}
+
+.textbookhelptext2 {
+  padding-left: 180px; /* indent */
+  padding-top: 5px; /* top space */
 }

@@ -172,7 +172,6 @@ input[type="text"] {
   color: black; /* text color */
   outline: none; /* no focus outline */
   margin: 0 auto; /* centered horizontally */
-  justify-content: center /* INVALID unless parent is flex */
 }
 
 input[type="text"]:focus {

@@ -106,8 +106,8 @@
   position: relative; /* for internal positioning */
   float: right; /* floats image to right */
   border-radius: 25px; /* rounded corners */
-  height: auto;
-  width: 100%;/* keeps proportions */
+  height: auto; /* keeps proportions */
+  width: auto;
   display: block; /* block-level display */
 }
 

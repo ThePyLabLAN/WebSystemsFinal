@@ -107,7 +107,8 @@
   float: right; /* floats image to right */
   border-radius: 25px; /* rounded corners */
   height: auto; /* keeps proportions */
-  width: auto;
+  width: 100%;
+  overflow: hidden;
   display: block; /* block-level display */
 }
 

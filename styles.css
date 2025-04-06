@@ -88,6 +88,7 @@
 .content-wrapper {
   background-color: #D9D5D5; /* light grey background */
   border-radius: 25px; /* rounded corners */
+  overflow: hidden;
 }
 
 .text {
@@ -107,8 +108,7 @@
   float: right; /* floats image to right */
   border-radius: 25px; /* rounded corners */
   height: auto; /* keeps proportions */
-  width: 100%;
-  overflow: hidden;
+  max-width: 100%;
   display: block; /* block-level display */
 }
 
@@ -160,7 +160,7 @@ border-radius: 25px; /* rounded corners */
 }
 
 .httext {
-  padding-left: 10px; /* left padding */
+  text-align: center; /* Centering */
 }
 
 input[type="text"] {
@@ -174,6 +174,7 @@ input[type="text"] {
   color: black; /* text color */
   outline: none; /* no focus outline */
   margin: 0 auto; /* centered horizontally */
+  justify-content: center /* INVALID unless parent is flex */
 }
 
 input[type="text"]:focus {
@@ -184,10 +185,18 @@ input::placeholder {
   color: #aaa; /* placeholder color */
 }
 
+.middleform {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
 .spacing {
   padding-bottom: 10px; /* space below */
   margin: auto; /* center horizontally */
 }
+
+/* Form parts */
 
 .bigbox {
   display: flex; /* layout children in a row */
@@ -199,6 +208,7 @@ input::placeholder {
   border-radius: 25px; /* rounded corners */
   width: 40%; /* partial width */
   height: 200px; /* fixed height */
+  margin: auto; /* Center */
 }
 
 .tophelpbox {
@@ -208,18 +218,20 @@ input::placeholder {
 }
 
 .generalhelp {
-  background-color: #5E503F; /* dark background */
-  color: white; /* white text */
+  background-color: #F8F5F5; /* dark background */
+  color: #aaa; /* white text */
   width: 400px; /* fixed width */
   height: 30px; /* fixed height */
   border-radius: 25px; /* rounded */
   padding: 0; /* no inner space */
   border: none; /* no border */
+  margin: auto; /* Center */
 }
 
 .generalhelptext {
   padding-left: 180px; /* indent text */
   padding-top: 5px; /* top space */
+  margin: auto; /* Center */
 }
 
 .textbookhelp {
@@ -230,12 +242,31 @@ input::placeholder {
   border-radius: 25px; /* rounded */
   padding-left: 0; /* no left space */
   border: none; /* no border */
+  margin: auto; /* Center */
+  margin-top: 10px;
 }
 
-.textbookhelptext {
-  padding-left: 180px; /* indent */
-  padding-top: 5px; /* top padding */
+.textbookhelptext { 
+  padding-left: 176px; /* indent text */
+  padding-top: 5px; /* top space */
+  margin: auto; /* Center */
+  width: 400px; /* width */
+  height: 30px; /* height */
 }
+
+.textbookhelp:hover {
+  background-color: #5E503F; /* background on hover */
+  color: white; /* text color on hover */
+  transition: 0.5s ease; /* smooth transition */
+}
+
+.generalhelp:hover {
+  background-color: #5E503F; /* background on hover */
+  color: white; /* text color on hover */
+  transition: 0.5s ease; /* smooth transition */
+}
+
+/* Help Boxes */
 
 .helpbox2 {
   position: relative; /* for positioning */
@@ -243,6 +274,7 @@ input::placeholder {
   border-radius: 25px; /* rounded */
   width: 55%; /* width */
   height: 200px; /* height */
+  margin: auto; /* Center */
 }
 
 .tophelpbox2 {

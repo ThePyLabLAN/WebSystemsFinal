@@ -196,12 +196,16 @@ input::placeholder {
   margin: auto; /* center horizontally */
 }
 
-/* Form parts */
+/* Help Box */
 
 .bigbox {
   display: flex; /* layout children in a row */
   justify-content: space-between; /* spread out children */
+  margin-top: 50px; /* space above */
 }
+
+
+/* FAQ Box */
 
 .helpbox {
   background-color: #D9D5D5; /* background color */
@@ -266,9 +270,9 @@ input::placeholder {
   transition: 0.5s ease; /* smooth transition */
 }
 
-/* Help Boxes */
+/* General Box */
 
-.helpbox2 {
+.generalhelpbox {
   position: relative; /* for positioning */
   background-color: #D9D5D5; /* background */
   border-radius: 25px; /* rounded */
@@ -277,38 +281,61 @@ input::placeholder {
   margin: auto; /* Center */
 }
 
-.tophelpbox2 {
-  padding-left: 10px; /* indent */
-  text-decoration: underline; /* underline */
-  text-decoration-color: #5E503F; /* underline color */
+.topgeneralhelpbox {
+  padding-left: 20px; /* indent */
+  text-decoration: underline; /* underline text */
+  text-decoration-color: #5E503F; /* custom underline color */
 }
 
-.generalhelp2 {
-  background-color: #F8F5F5; /* background */
-  color: #aaa; /* text color */
+.generalhelpwrapper {
+  background-color: #F8F5F5; /* light background */
+  color: #aaa; /* grey text */
   width: 400px; /* width */
   height: 30px; /* height */
   border-radius: 25px; /* rounded */
-  padding-left: 0; /* no indent */
+  padding-left: 0; /* no left space */
   border: none; /* no border */
+  margin: auto; /* Center */
+  margin-top: 10px;
 }
 
-.generalhelptext2 {
-  padding-left: 180px; /* indent */
+.generalhelpwrapper:hover {
+  background-color: #5E503F; /* background on hover */
+  color: white; /* text color on hover */
+  transition: 0.5s ease; /* smooth transition */
+}
+
+.generalhelptext1 {
+  text-align:center; /* Centering */
   padding-top: 5px; /* top space */
+  margin: auto; /* Center */
+  width: 400px; /* width */
+  height: 30px; /* height */
 }
 
-.textbookhelp2 {
-  background-color: #F8F5F5; /* background */
-  color: #aaa; /* text color */
+.textbookhelpwrapper {
+  background-color: #F8F5F5; /* light background */
+  color: #aaa; /* grey text */
   width: 400px; /* width */
   height: 30px; /* height */
   border-radius: 25px; /* rounded */
-  padding-left: 0; /* no padding */
+  padding-left: 0; /* no left space */
   border: none; /* no border */
+  margin: auto; /* Center */
+  margin-top: 10px;
 }
 
-.textbookhelptext2 {
-  padding-left: 180px; /* indent */
+.textbookhelpwrapper:hover {
+  background-color: #5E503F; /* background on hover */
+  color: white; /* text color on hover */
+  transition: 0.5s ease; /* smooth transition */
+}
+
+
+.textbookhelptext1 {
+  text-align:center; /* Centering */
   padding-top: 5px; /* top space */
+  margin: auto; /* Center */
+  width: 400px; /* width */
+  height: 30px; /* height */
 }

@@ -359,3 +359,14 @@ input::placeholder {
   width: 400px; /* width */
   height: 30px; /* height */
 }
+
+.visually-hidden  {
+  position: absolute; /* removes from flow */
+  width: 1px; /* minimal width */
+  height: 1px; /* minimal height */
+  padding: 0; /* no padding */
+  margin: -1px; /* negative margin */
+  overflow: hidden; /* hides overflow */
+  clip: rect(0,0,0,0); /* clips to zero size */
+  border: 0; /* no border */
+}

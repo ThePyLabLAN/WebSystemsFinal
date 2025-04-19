@@ -14,7 +14,7 @@
 
 .search-box {
   background-color: #F8F5F5; /* light background */
-  color: #A39797; /* text color */
+  color: #7c7070; /* text color */ 
   width: 400px; /* sets width */
   height: 30px; /* sets height */
   border-radius: 25px; /* rounded corners */
@@ -35,7 +35,7 @@
 .dropdown-btn {
   padding: 10px 40px; /* space inside button */
   background-color: #F8F5F5; /* light background */
-  color: #A39797; /* text color */
+  color: #7c7070; /* text color */ 
   border: none; /* removes border */
   cursor: pointer; /* pointer cursor on hover */
   border-radius: 25px; /* rounded corners */
@@ -103,6 +103,12 @@
   padding-top: 5px; /* space on the top */
 }
 
+.text3 {
+  padding-left: 15px; /* space on the left */
+  margin-right: 10px; /* space on the right */
+  padding-top: 5px; /* space on the top */
+}
+
 .image2 {
   position: relative; /* for internal positioning */
   float: right; /* floats image to right */
@@ -111,6 +117,20 @@
   max-width: 100%;
   display: block; /* block-level display */
 }
+
+.image3 {
+  position: relative; /* for internal positioning */
+  float: left; /* floats image to right */
+  border-radius: 25px; /* rounded corners */
+  height: auto; /* keeps proportions */
+  max-width: 100%;
+  display: block; /* block-level display */
+  margin-top: 10px;
+  margin-bottom: 20px; /* space above and below */
+  margin-right: 10px; /* space on the right */
+}
+
+
 
 /* Footer */
 
@@ -148,7 +168,7 @@ border-radius: 25px; /* rounded corners */
   display: flex; /* flex layout */
   justify-content: space-between; /* items on both ends */
   background-color: #F8F5F5; /* background */
-  color: #A39797; /* text color */
+  color: #7c7070; /* text color */ 
   width: 500px; /* fixed width */
   height: 30px; /* fixed height */
   margin: 0 auto; /* centered */
@@ -182,7 +202,7 @@ input[type="text"]:focus {
 }
 
 input::placeholder {
-  color: #aaa; /* placeholder color */
+  color: #7c7070; /* text color */ 
 }
 
 .middleform {
@@ -223,7 +243,7 @@ input::placeholder {
 
 .generalhelp {
   background-color: #F8F5F5; /* dark background */
-  color: #aaa; /* white text */
+  color: #7c7070; /* text color */ 
   width: 400px; /* fixed width */
   height: 30px; /* fixed height */
   border-radius: 25px; /* rounded */
@@ -240,7 +260,7 @@ input::placeholder {
 
 .textbookhelp {
   background-color: #F8F5F5; /* light background */
-  color: #aaa; /* grey text */
+  color: #7c7070; /* text color */ 
   width: 400px; /* width */
   height: 30px; /* height */
   border-radius: 25px; /* rounded */
@@ -289,7 +309,7 @@ input::placeholder {
 
 .generalhelpwrapper {
   background-color: #F8F5F5; /* light background */
-  color: #aaa; /* grey text */
+  color: #7c7070; /* text color */ 
   width: 400px; /* width */
   height: 30px; /* height */
   border-radius: 25px; /* rounded */
@@ -315,7 +335,7 @@ input::placeholder {
 
 .textbookhelpwrapper {
   background-color: #F8F5F5; /* light background */
-  color: #aaa; /* grey text */
+  color: #7c7070; /* text color */ 
   width: 400px; /* width */
   height: 30px; /* height */
   border-radius: 25px; /* rounded */

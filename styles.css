@@ -14,7 +14,7 @@
 
 .search-box {
   background-color: #F8F5F5; /* light background */
-  color: #7c7070; /* text color */ 
+  color: #5E503F; /* text color */ 
   width: 400px; /* sets width */
   height: 30px; /* sets height */
   border-radius: 25px; /* rounded corners */
@@ -35,7 +35,7 @@
 .dropdown-btn {
   padding: 10px 40px; /* space inside button */
   background-color: #F8F5F5; /* light background */
-  color: #7c7070; /* text color */ 
+  color: #5E503F; /* text color */ 
   border: none; /* removes border */
   cursor: pointer; /* pointer cursor on hover */
   border-radius: 25px; /* rounded corners */
@@ -168,7 +168,7 @@ border-radius: 25px; /* rounded corners */
   display: flex; /* flex layout */
   justify-content: space-between; /* items on both ends */
   background-color: #F8F5F5; /* background */
-  color: #7c7070; /* text color */ 
+  color: #5E503F; /* text color */ 
   width: 500px; /* fixed width */
   height: 30px; /* fixed height */
   margin: 0 auto; /* centered */
@@ -202,7 +202,7 @@ input[type="text"]:focus {
 }
 
 input::placeholder {
-  color: #7c7070; /* text color */ 
+  color: #5E503F; /* text color */ 
 }
 
 .middleform {
@@ -243,7 +243,7 @@ input::placeholder {
 
 .generalhelp {
   background-color: #F8F5F5; /* dark background */
-  color: #7c7070; /* text color */ 
+  color: #5E503F; /* text color */ 
   width: 400px; /* fixed width */
   height: 30px; /* fixed height */
   border-radius: 25px; /* rounded */
@@ -260,7 +260,7 @@ input::placeholder {
 
 .textbookhelp {
   background-color: #F8F5F5; /* light background */
-  color: #7c7070; /* text color */ 
+  color: #5E503F; /* text color */ 
   width: 400px; /* width */
   height: 30px; /* height */
   border-radius: 25px; /* rounded */
@@ -309,7 +309,7 @@ input::placeholder {
 
 .generalhelpwrapper {
   background-color: #F8F5F5; /* light background */
-  color: #7c7070; /* text color */ 
+  color: #5E503F; /* text color */ 
   width: 400px; /* width */
   height: 30px; /* height */
   border-radius: 25px; /* rounded */
@@ -335,7 +335,7 @@ input::placeholder {
 
 .textbookhelpwrapper {
   background-color: #F8F5F5; /* light background */
-  color: #7c7070; /* text color */ 
+  color: #5E503F; /* text color */ 
   width: 400px; /* width */
   height: 30px; /* height */
   border-radius: 25px; /* rounded */

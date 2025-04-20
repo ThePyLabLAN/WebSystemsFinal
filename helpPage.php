@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           <div class="dropdown-content">
             <a href="index.html">Home</a>
             <a href="textPage.html">Textbook</a>
-            <a href="helpPage.html">Help</a>
+            <a href="helpPage.php">Help</a>
           </div>
         </div>
     </header> 

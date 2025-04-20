@@ -18,11 +18,6 @@ const glossary = {
     'Web Components': 'Standard for reusable, encapsulated custom elements.',
     ARIA: 'Accessible Rich Internet Applications—attributes for assistive tech.',
     Accessibility: 'Designing content usable by everyone, including those with disabilities.',
-    PWA: 'Progressive Web App—web site that installs and works offline.',
-    'Service Worker': 'Background script enabling offline caching and push events.',
-    'Responsive Design':
-      'Layout approach that adapts fluidly to different screens and devices.',
-    SEO: 'Search Engine Optimization—techniques to improve search visibility.'
   };
   
   /* 2. Create a single reusable tooltip element --------------------- */

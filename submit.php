@@ -22,5 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $query->bind_param("ssssss", $firstName, $lastName, $email, $phone, $problem, $comms);
     $query->execute();
     $query->close();
+
+    echo "✅ Your support request has been submitted!";
 }
 ?>
